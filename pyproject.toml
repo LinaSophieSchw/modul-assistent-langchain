@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "modul-assistent-langchain"
+version = "0.1.0"
+description = "LangChain durch vier dokumentierte Jupyter Notebooks lernen"
+requires-python = ">=3.12,<3.13"
+[tool.setuptools.packages.find]
+include = ["modul_assistent*"]
