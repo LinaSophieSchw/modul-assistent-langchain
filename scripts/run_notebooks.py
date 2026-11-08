@@ -3,9 +3,7 @@ from pathlib import Path
 import os, sys, subprocess
 ROOT = Path(__file__).resolve().parents[1]
 if len(sys.argv) == 1:
-    from dotenv import dotenv_values
-    if dotenv_values(ROOT/'.env').get('LLM_MODE','demo') != 'demo':
-        raise SystemExit('Automatischer Test nur mit LLM_MODE=demo in .env erlaubt.')
+    # Der Kindprozess setzt demo ausdrücklich; .env überschreibt diese Wahl nicht.
     for path in sorted((ROOT/'notebooks').glob('*.ipynb')):
         env = dict(os.environ, LLM_MODE='demo', MPLBACKEND='Agg', PYTHONIOENCODING='utf-8')
         subprocess.run([sys.executable,__file__,str(path)],check=True,env=env,cwd=ROOT)

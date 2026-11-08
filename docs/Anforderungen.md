@@ -11,11 +11,11 @@
 | Finale Promptversion und Vergleich | Vorschlag samt Begründung, Platz für echte Beobachtung | Eigener BFH-Vergleich offen |
 | Streaming und Tokenkosten | Notebook 01 | Demoablauf und hypothetische Kosten; Live-Usage offen |
 | Buffer Summary Window | Notebook 02 | Mechanismen und begründete Auswahl |
-| Zwei PDFs und Chroma | Notebook 03 und 04 | Vorhandene Aufgabenunterlagen |
+| Zwei PDFs und Chroma | Notebook 03 und 04 | Kursunterlagen zu Bitcoin und Open Banking |
 | RetrievalQA und AgentExecutor | langchain-classic | Bewusst zur Aufgabenstellung passend |
-| ReAct und eigenes Tool | Notebook 04, lernzeit und modul_suche | Demoablauf geprüft; Live-Toolwahl offen |
-| Eigene Testfragen und Bewertung | Fünf vorbereitete Fälle, CSV, manuelle Bewertung | Eigene Erweiterungen und BFH-Ergebnisse offen |
-| Abschlussreflexion etwa 1 bis 2 Seiten | docs/Abschlussreflexion.md | Persönliche Ausarbeitung offen |
+| ReAct und eigenes Tool | Notebook 04, lernzeit und modul_suche | Demo und BFH-Einzelprobe geprüft; Grenzen dokumentiert |
+| Eigene Testfragen und Bewertung | Fünf vorbereitete Fälle, CSV, manuelle Bewertung | BFH-Einzelprobe vorhanden; eigene Erweiterungen und manuelle Bewertung offen |
+| Abschlussreflexion etwa 1 bis 2 Seiten | docs/Abschlussreflexion.md | Ausformulierter Zwischenstand plus zweiseitige PDF; spätere persönliche Versuche zu ergänzen |
 | Zwei Erweiterungen | Abschlussreflexion | Ausformulierte Vorschläge |
 
 Die offenen persönlichen Nachweise werden nicht durch erfundene Erstprompts, Messungen oder

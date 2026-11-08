@@ -28,11 +28,13 @@ Ein neuer Embedding-Raum braucht einen neu aufgebauten Index. Die Demo ist kein 
 
 ## Warum diese Unterlagen
 
-Die zwei vorhandenen PDF-Dateien sind echte Aufgabenunterlagen und ermöglichen Fragen zu
-Projektziel, Umfang und Anforderungen. Die allgemeine Übersicht enthält auch andere Projekte;
-das macht eine sorgfältige Auswahl der Treffer nötig. Der Assistent deckt dadurch nicht sämtliche
-Inhalte des Moduls Digital Finance ab. Andere Foliensätze können die PDFs ersetzen, benötigen aber
-neue Sollfragen, Seitenbelege und entsprechend angepasste Demo-Fälle.
+Die zwei Kursunterlagen unter `data/modulunterlagen` behandeln Bitcoin und Open Banking.
+Die kurze Bitcoin-Unterlage ermöglicht einen einfachen Einstieg. Die Open-Banking-Unterlage
+ergänzt das Beispiel um APIs, Bankrollen und Datenaustausch. Die spätere Suche muss deshalb
+passende Abschnitte aus der richtigen Datei auswählen. Die Aufgabenunterlagen in `data/`
+werden nicht indexiert. Eingebettete Grafiken, insbesondere auf Seite 3 der Open-Banking-PDF,
+sind beim einfachen Textauslesen teilweise nicht erfasst. Der Assistent deckt nur die
+vorliegenden Inhalte ab; die Unterlagen werden nicht als aktuelle Markt- oder Rechtsauskunft verwendet.
 
 ## Weitere Grenzen
 
@@ -41,5 +43,5 @@ Der Quellencheck verhindert keine inhaltlich falsche Antwort mit existierender Q
 Textanweisungen im PDF werden im Prompt als Daten gekennzeichnet, eine umfassende Abwehr
 von Prompt Injection ist damit nicht nachgewiesen. Die PDF-Extraktion enthält keine OCR.
 Die BFH-Kompatibilität von ReAct-Format, Streaming und Embeddings ist erst durch Live-Läufe belegt.
-Die gelockten Paketversionen wurden für Python 3.12 unter Windows geprüft; andere Systeme
-und spätere Paketupdates müssen gesondert validiert werden.
+Die festgehaltenen Paketversionen wurden unter Windows mit Python 3.12 und 3.13 geprüft.
+Andere Systeme und spätere Paketupdates müssen gesondert validiert werden.

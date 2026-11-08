@@ -8,3 +8,4 @@ ergebnisse/live_*
 venv/
 chroma_db/
 .chroma/
+docs/Vorlage_und_Feedback.md

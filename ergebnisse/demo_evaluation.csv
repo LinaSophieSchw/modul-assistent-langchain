@@ -1,6 +1,6 @@
-﻿id,modus,antwort,quelle,signal_ok,sollseite_ok,tool_ok,nichtwissen_ok,sekunden,inhalt_manuell
-Q1,demo,Gefordert sind vier eigenständig lauffähige Jupyter Notebooks.,"LangChain_Literate_Programming_Aufgabenstellung.pdf, S. 1",True,True,,,0.016,noch prüfen
-Q2,demo,Die Abschlussreflexion soll ungefähr 1 bis 2 Seiten umfassen.,"LangChain_Literate_Programming_Aufgabenstellung.pdf, S. 4",True,True,,,0.008,noch prüfen
-Q3,demo,"Pro Notebook soll mindestens ein typischer Fehler reproduziert, erklärt und korrigiert werden.","LangChain_Literate_Programming_Aufgabenstellung.pdf, S. 2",True,True,,,0.006,noch prüfen
-Q4,demo,Das steht nicht in den vorliegenden Unterlagen.,keine Quelle,True,,,True,0.006,noch prüfen
-Q5,demo,Planungswert: 90 Arbeitsstunden bei 30 Stunden pro ECTS.,Planungsannahme 30 Stunden pro ECTS,True,,True,,0.015,noch prüfen
+﻿id,modus,antwort,signal_ok,quelle_ok,tool_ok,sekunden,inhalt_manuell
+Q1,demo,"{""antwort"":""Laut der Unterlage ist die Gesamtmenge auf 21 Millionen Bitcoins begrenzt."",""quelle"":""Eigenschaften-Bitcoin.pdf, S. 1""}",True,True,True,0.053,noch prüfen
+Q2,demo,"{""antwort"":""Die Open-Banking-Unterlage nennt JSON und XML als Formate für die Codierung."",""quelle"":""Open Banking_Zusammenfassung.pdf, S. 1""}",True,True,True,0.04,noch prüfen
+Q3,demo,"{""antwort"":""Laut der Unterlage müssen Bankkunden Drittanbietern erlauben, auf ihre Bankdaten zuzugreifen."",""quelle"":""Open Banking_Zusammenfassung.pdf, S. 3""}",True,True,True,0.042,noch prüfen
+Q4,demo,"{""antwort"":""Der heutige Bitcoin-Kurs steht nicht in den vorliegenden Unterlagen."",""quelle"":""keine Quelle""}",True,True,True,0.045,noch prüfen
+Q5,demo,Planungswert: 90 Arbeitsstunden bei 30 Stunden pro ECTS.,True,True,True,0.028,noch prüfen

@@ -4,7 +4,7 @@
 
 Diese Arbeit bereitet zentrale LangChain-Konzepte so auf, dass eine Person mit Python-Grundkenntnissen
 sie anhand von vier Jupyter Notebooks nachvollziehen und ausprobieren kann. Das Ergebnis ist ein
-kleiner Modul-Assistent über zwei PDF-Unterlagen zur DIFA-Projektarbeit. Der Schwerpunkt liegt auf
+kleiner Modul-Assistent über zwei DIFA-Kursunterlagen zu Bitcoin und Open Banking. Der Schwerpunkt liegt auf
 dem Verständnis des Datenflusses und auf begründeten Entscheidungen. Eine produktionsreife Anwendung
 ist nicht das Ziel. Den verbindlichen Umfang legt die ausführliche Aufgabenstellung fest [1].
 
@@ -19,31 +19,22 @@ das: Erst wird die Frage erklärt, dann folgt der Code. Die nächste Erklärung 
 Experiment zeigt und welche Grenze noch offen bleibt. Eine Codezelle ohne direkt vorangehende
 Begründung wäre deshalb auch dann unvollständig, wenn sie technisch funktioniert.
 
-Als didaktische Anregung dient Raquel Kehls LangGraph-Projekt [3]. Dort entwickelt sich ein einziger
-Rechercheassistent über mehrere Notebooks. Besonders nützlich sind die gleichbleibende Struktur und
-die absichtlich ausgelösten Fehler. Mein Lernpfad verwendet dieselben allgemeinen Prinzipien für
-die andere Aufgabenstellung: vier deutschsprachige Notebooks über LangChain. Code, Fallfragen und
-Erklärungen wurden dafür neu erstellt. Eine Übernahme der LangGraph-Architektur wäre inhaltlich
-nicht passend, weil hier zunächst Nachrichten, Chains, Memory und RAG verstanden werden sollen.
 
-Das E-Mail-Feedback auf Raquels Projekt macht ausserdem deutlich, dass Lesbarkeit und Ausführbarkeit
-unterschiedliche Anforderungen sind. Deshalb werden lokale Beispielausgaben gespeichert. Ein
-erkennbarer Testmodus sorgt gleichzeitig dafür, dass diese Ausgaben nicht mit echten BFH-Ergebnissen
-verwechselt werden. Die technische Prüfung kann die didaktische Wirkung allerdings nicht beweisen.
-Dafür bleibt Rückmeldung von Personen nötig, die den Lernpfad erstmals durcharbeiten.
+
 
 ## Aufbau des Lernpfads
 
 ### Notebook 01
 
 Der Einstieg verfolgt eine einzelne Nachricht von der Python-Eingabe bis zur strukturierten Antwort.
-Ein PromptTemplate verbindet eine Frage mit einem kleinen vorgegebenen Kontext. Über den
+Die erste Seite der Bitcoin-PDF liefert den Kontext zu einer Frage nach der begrenzten Gesamtmenge.
+Ein PromptTemplate verbindet diesen Text mit der Frage. Über den
 LCEL-Operator werden Prompt, Modell und Parser zu einer Chain verknüpft. Die drei Schritte lassen
 sich zusätzlich einzeln ausführen, damit der Datenfluss sichtbar bleibt.
 
 Das Antwortschema trennt Antworttext und Quelle. Dadurch lässt sich die Form kontrollieren, ohne
-eine inhaltliche Verlässlichkeit vorzutäuschen. Eine fehlende Promptvariable löst einen anderen
-Fehler aus als ein nicht parsebarer Antworttext. Beide Fehler werden deshalb getrennt betrachtet.
+eine inhaltliche Verlässlichkeit vorzutäuschen. Eine fehlende Promptvariable wird als konkretes Fehlerbeispiel reproduziert und korrigiert.
+Der Parser erklärt zusätzlich, wie eine vorgegebene Antwortform geprüft wird.
 Streaming und die Kostenrechnung ergänzen den Blick auf den Modellaufruf. Die Beispielpreise sind
 Rechenannahmen; ein BFH-Tarif wird daraus nicht abgeleitet.
 
@@ -63,7 +54,7 @@ Informationen bei einer Begrenzung verloren gehen können.
 ### Notebook 03
 
 Gesprächsverlauf ist noch keine fachliche Quelle. Deshalb ergänzt das dritte Notebook eine
-RAG-Pipeline über die ausführliche Aufgabenstellung und die allgemeine DIFA-Projektübersicht.
+RAG-Pipeline über die beiden Kursunterlagen zu Bitcoin und Open Banking.
 Die Texte werden mit einem PDF-Loader seitenweise geladen. Ein Splitter bildet überlappende
 Abschnitte, ein Embedding-Verfahren erzeugt Vektoren, und Chroma verwaltet den Suchindex.
 
@@ -111,8 +102,9 @@ Suchindex neu aufgebaut, weil Vektoren unterschiedlicher Modelle nicht gemeinsam
 
 ## Evaluation und Aussagegrenzen
 
-Die Mini-Evaluation legt die Fragen vor dem Durchlauf fest: Anzahl Notebooks, Umfang der Reflexion,
-geforderte Fehlerbeispiele, eine nicht beantwortbare Frage und eine Rechenfrage. Für Dokumentfragen
+Die Mini-Evaluation legt die Fragen vor dem Durchlauf fest: die begrenzte Bitcoin-Menge,
+Codierungsformate in Open Banking, die Erlaubnis für den Datenzugriff, eine nicht beantwortbare
+Frage nach dem heutigen Bitcoin-Kurs und eine Rechenfrage. Für Dokumentfragen
 werden erwartete Seiten und einfache Antwortsignale hinterlegt. Beim Toolfall wird zusätzlich
 geprüft, ob das Werkzeug tatsächlich ausgeführt wurde. Laufzeiten werden unmittelbar gemessen.
 
@@ -124,7 +116,7 @@ BFH-Durchläufen derselben Fragen und zusätzlichen, vorher nicht im Beispiel ve
 Der lokale Modus verwendet konstruierte Antworten und lexikalisches Wort-Hashing. Seine erfolgreichen
 Prüfungen belegen, dass bekannte Programmschritte zusammenarbeiten. Sie messen weder die Qualität
 eines BFH-Modells noch die semantische Güte der Embeddings. Eine zweite Grenze ist der kleine
-Dokumentenbestand: Der Assistent kennt die Projektunterlagen, nicht alle Inhalte von Digital Finance.
+Dokumentenbestand: Der Assistent kennt die beiden Kursunterlagen, nicht alle Inhalte von Digital Finance.
 
 ## Einordnung des Ergebnisses
 
@@ -136,7 +128,7 @@ als möglichst viele Frameworkfunktionen einzubauen.
 
 Die persönlichen Erstprompts, tatsächlichen BFH-Versuche und eigenen Lernerfahrungen werden vor
 der Abgabe ergänzt. Zwei konkrete Erweiterungen sind bereits in der Reflexionsdatei ausgearbeitet:
-eine zuverlässigere Umformulierung mehrdeutiger Anschlussfragen und eine grössere systematische
+die Erschliessung von Grafiken mittels Texterkennung und eine grössere systematische
 Prüfung der Belegtreue.
 
 ## Literatur und Materialien
@@ -147,11 +139,6 @@ Gruppen C und D, data/DIFA-Projekt 2027_Gruppen C und D.pdf.
 
 [2] Knuth, D. E. (1984). Literate Programming. The Computer Journal, 27(2), 97–111.
 https://doi.org/10.1093/comjnl/27.2.97. Grundkonzept gemäss der bereitgestellten Aufgabenstellung.
-
-[3] Kehl, R. Learning LangGraph through Literate Notebooks.
-https://github.com/RaquelKehl/learn-langgraph-literate-notebooks. Eingesehener Stand
-b5dc4e94c2767b651470ce0fd8966a1145f92a69, Abruf 30.10.2026. Ergänzend bereitgestellte E-Mail
-mit Einladung zur Feedbackrunde und Andrés Rückmeldung; keine eigene Ausführung der Vorlage behauptet.
 
 [4] BFH TI. Machine Learning Management Platform Inference API.
 https://infra.pages.ti.bfh.ch/mlmp/src/llm/. Abruf 30.10.2026.
