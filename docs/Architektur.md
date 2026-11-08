@@ -1,47 +1,30 @@
-# Technische Entscheidungen und Grenzen
+# Aufbau des Modul Assistenten
 
-## Datenfluss
+## Modellanbindung
 
-PDFs werden seitenweise geladen, mit Seitenmetadaten in Chunks geteilt, eingebettet und in
-Chroma abgelegt. Der Retriever liefert Textabschnitte. Eine LCEL-Chain aus Prompt, Chatmodell
-und Pydantic-Parser erzeugt Antwort und Quelle. Die Herkunft wird gegen die gefundenen
-Abschnitte geprüft. Das sichert die Existenz einer Quelle, nicht die logische Ableitung jeder Aussage.
+Alle Sprachmodell- und Embedding-Aufrufe verwenden die BFH-API. `chat_model()` erzeugt ein ChatOpenAI-Objekt für die konfigurierte BFH-Adresse. `embedding_model()` erzeugt OpenAIEmbeddings für denselben Dienst. Die Klassennamen bezeichnen kompatible LangChain-Adapter; sie legen keinen OpenAI-Server fest.
 
-Der Agent kann modul_suche oder lernzeit verwenden. modul_suche ruft die RAG-Chain auf.
-lernzeit rechnet unter einer expliziten Planungsannahme. Der Agent hat maximal vier Iterationen
-und eine Laufzeitgrenze. Ungültiges ReAct-Format wird als Fehler sichtbar; es gibt keinen stillen
-Wechsel auf einen scheinbar erfolgreichen anderen Ablauf.
+Adresse, Modellnamen und Schlüssel werden aus der lokalen Konfiguration gelesen. Der Schlüssel gehört in .env oder eine Umgebungsvariable und wird nicht ausgegeben. Ohne Schlüssel erscheint ein erklärender Fehler. API-Fehler werden nicht durch andere Antworten ersetzt.
 
-## Warum Classic
+## Lernpfad
 
-Die Aufgabenstellung verlangt RetrievalQA und AgentExecutor. Die Implementierung verwendet
-deshalb langchain-classic. Dies ist eine bewusste Kompatibilitätsentscheidung; es ist keine
-Empfehlung, neue grössere Anwendungen grundsätzlich mit den alten APIs zu beginnen.
-Die offizielle aktuelle Einführung verwendet create_agent. Der Vergleich ist im Notebook erläutert.
+1. Notebook 01: Text und Frage → Prompt → BFH-Modell → Parser → Antwort und Quelle.
+2. Notebook 02: Frühere Nachrichten werden je Sitzung gespeichert und ausgewählt oder zusammengefasst erneut mitgegeben. Der Speicher gehört zum Programm, nicht zum Modell.
+3. Notebook 03: PDF-Seiten → Abschnitte → BFH-Embeddings → Chroma → gefundene Abschnitte → BFH-Antwort mit Quelle.
+4. Notebook 04: Ein Agent mit Gesprächsverlauf wählt Dokumentensuche oder Rechenwerkzeug. Der Executor führt den tatsächlichen Toolaufruf aus und gibt dessen Ergebnis zurück.
 
-## Warum ein lokaler Modus
+## Grenzen und Entscheidungen
 
-Ein persönlicher API-Schlüssel sollte keine Voraussetzung sein, um Erklärung, Datenfluss und
-Fehlerfälle nachzuvollziehen. Die Demo nutzt konstruierte Antworten und lexikalische Vektoren.
-Im BFH-Modus werden Chat und Embeddings ausgetauscht, während der übrige Datenfluss gleich bleibt.
-Ein neuer Embedding-Raum braucht einen neu aufgebauten Index. Die Demo ist kein Modellbenchmark.
+Die Quelle wird mit den tatsächlich gefundenen Abschnitten abgeglichen. Diese Herkunftsprüfung ersetzt keine inhaltliche Belegprüfung. Ein gefundenes Dokument ist noch kein ausreichender Beleg für jede Frage.
 
-## Warum diese Unterlagen
+Der Suchindex wird im Notebook neu aufgebaut. Wiederholte Notebookläufe erzeugen deshalb auch neue Embedding-Anfragen. Die Vektorgrafik reduziert die Darstellung auf zwei Dimensionen; Abstände darin bilden den ursprünglichen Raum nur teilweise ab.
 
-Die zwei Kursunterlagen unter `data/modulunterlagen` behandeln Bitcoin und Open Banking.
-Die kurze Bitcoin-Unterlage ermöglicht einen einfachen Einstieg. Die Open-Banking-Unterlage
-ergänzt das Beispiel um APIs, Bankrollen und Datenaustausch. Die spätere Suche muss deshalb
-passende Abschnitte aus der richtigen Datei auswählen. Die Aufgabenunterlagen in `data/`
-werden nicht indexiert. Eingebettete Grafiken, insbesondere auf Seite 3 der Open-Banking-PDF,
-sind beim einfachen Textauslesen teilweise nicht erfasst. Der Assistent deckt nur die
-vorliegenden Inhalte ab; die Unterlagen werden nicht als aktuelle Markt- oder Rechtsauskunft verwendet.
+RetrievalQA, create_react_agent und AgentExecutor werden zur ausdrücklich benannten Aufgabenstellung passend aus langchain-classic verwendet. Die im Memory-Beispiel eingesetzten Klassen erzeugen in der festgehaltenen Umgebung Veraltungswarnungen; diese werden erklärt.
 
-## Weitere Grenzen
+Der Agent ist auf vier Iterationen begrenzt. Sein Zeitbudget ist kein harter Abbruch einer bereits laufenden Anfrage. Zusätzlich gibt es einen Timeout für den HTTP-Aufruf.
 
-Der Speicher ist lokal und nicht dauerhaft. Sitzungskennungen sind keine Autorisierung.
-Der Quellencheck verhindert keine inhaltlich falsche Antwort mit existierender Quellenangabe.
-Textanweisungen im PDF werden im Prompt als Daten gekennzeichnet, eine umfassende Abwehr
-von Prompt Injection ist damit nicht nachgewiesen. Die PDF-Extraktion enthält keine OCR.
-Die BFH-Kompatibilität von ReAct-Format, Streaming und Embeddings ist erst durch Live-Läufe belegt.
-Die festgehaltenen Paketversionen wurden unter Windows mit Python 3.12 und 3.13 geprüft.
-Andere Systeme und spätere Paketupdates müssen gesondert validiert werden.
+## Prüfungen
+
+Die lokalen Tests prüfen Struktur, Schemas, PDF-Metadaten und den Rechner ohne API-Aufruf. Die Ausführung der Notebooks und der BFH-Verbindungstest verwenden echte Anfragen. Die Evaluation speichert tatsächliche Antworten und Werkzeugergebnisse; einfache Wort- und Quellenkriterien müssen manuell eingeordnet werden.
+
+Für die Dokumentensuche als Agentenwerkzeug wird das Antwortschema direkt an die BFH-Schnittstelle übergeben (with_structured_output mit json_schema). Die API-Unterstützung wurde am 8. November durch einen echten Aufruf geprüft. Notebook01 erklärt zusätzlich den expliziten OutputParser; Notebook03 baut RetrievalQA mit Parser sichtbar auf. Notebook02 verwendet einfache Textantworten, damit der Gesprächsverlauf im Mittelpunkt steht.

@@ -15,7 +15,7 @@ Dateinamen und Seitenzahlen bleiben für die Quellenangaben erhalten.
 Die Open-Banking-PDF enthält auf Seite 3 auch Grafiken. Deren Beschriftungen werden beim
 einfachen Textauslesen teilweise nicht erfasst. Die Beispiele verwenden den auslesbaren Text.
 Antworten geben den Inhalt der bereitgestellten Unterlagen wieder; eine Prüfung auf aktuelle
-Marktdaten oder inzwischen geänderte Regeln ist nicht Bestandteil des lokalen Demo-Modus.
+Marktdaten oder inzwischen geänderte Regeln ist nicht Bestandteil dieser Fachunterlagen.
 
 ## Identifikation der Originaldateien
 

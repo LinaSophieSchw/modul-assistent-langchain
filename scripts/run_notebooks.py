@@ -2,10 +2,14 @@
 from pathlib import Path
 import os, sys, subprocess
 ROOT = Path(__file__).resolve().parents[1]
+from dotenv import load_dotenv
+load_dotenv(ROOT / '.env', override=False)
+if not os.getenv('BFH_API_KEY'):
+    raise SystemExit('BFH_API_KEY fehlt. Zugang in .env oder als Umgebungsvariable eintragen.')
 if len(sys.argv) == 1:
-    # Der Kindprozess setzt demo ausdrücklich; .env überschreibt diese Wahl nicht.
+    # Alle Modellaufrufe verwenden die konfigurierte BFH-Schnittstelle.
     for path in sorted((ROOT/'notebooks').glob('*.ipynb')):
-        env = dict(os.environ, LLM_MODE='demo', MPLBACKEND='Agg', PYTHONIOENCODING='utf-8')
+        env = dict(os.environ, MPLBACKEND='Agg', PYTHONIOENCODING='utf-8')
         subprocess.run([sys.executable,__file__,str(path)],check=True,env=env,cwd=ROOT)
 else:
     import nbformat

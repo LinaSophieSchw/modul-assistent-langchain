@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="684pt" height="363.672pt" viewBox="0 0 684 363.672" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-11-08T18:11:36.567981</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 363.672 
+L 684 363.672 
+L 684 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 49.05 102.2796 
+L 634.95 102.2796 
+Q 637.182 102.2796 637.182 100.062 
+L 637.182 52.938 
+Q 637.182 50.7204 634.95 50.7204 
+L 49.05 50.7204 
+Q 46.818 50.7204 46.818 52.938 
+L 46.818 100.062 
+Q 46.818 102.2796 49.05 102.2796 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #edf2f7; stroke: #738497; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 23.94 220.0896 
+L 213.66 220.0896 
+Q 215.892 220.0896 215.892 217.872 
+L 215.892 134.712 
+Q 215.892 132.4944 213.66 132.4944 
+L 23.94 132.4944 
+Q 21.708 132.4944 21.708 134.712 
+L 21.708 217.872 
+Q 21.708 220.0896 23.94 220.0896 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #edf2f7; stroke: #738497; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 118.8 104.554657 
+Q 118.8 117.246119 118.8 128.372333 
+" clip-path="url(#p40ad711be4)" style="fill: none; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 121.6 122.772333 
+L 118.8 128.372333 
+L 116 122.772333 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 23.94 306.0216 
+L 213.66 306.0216 
+Q 215.892 306.0216 215.892 303.804 
+L 215.892 253.908 
+Q 215.892 251.6904 213.66 251.6904 
+L 23.94 251.6904 
+Q 21.708 251.6904 21.708 253.908 
+L 21.708 303.804 
+Q 21.708 306.0216 23.94 306.0216 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #eaf4ef; stroke: #738497; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 118.8 222.643007 
+Q 118.8 235.61133 118.8 247.014405 
+" clip-path="url(#p40ad711be4)" style="fill: none; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 121.6 241.414405 
+L 118.8 247.014405 
+L 116 241.414405 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 247.14 220.0896 
+L 436.86 220.0896 
+Q 439.092 220.0896 439.092 217.872 
+L 439.092 134.712 
+Q 439.092 132.4944 436.86 132.4944 
+L 247.14 132.4944 
+Q 244.908 132.4944 244.908 134.712 
+L 244.908 217.872 
+Q 244.908 220.0896 247.14 220.0896 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #edf2f7; stroke: #738497; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 342 104.554657 
+Q 342 117.246119 342 128.372333 
+" clip-path="url(#p40ad711be4)" style="fill: none; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 344.8 122.772333 
+L 342 128.372333 
+L 339.2 122.772333 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 247.14 306.0216 
+L 436.86 306.0216 
+Q 439.092 306.0216 439.092 303.804 
+L 439.092 253.908 
+Q 439.092 251.6904 436.86 251.6904 
+L 247.14 251.6904 
+Q 244.908 251.6904 244.908 253.908 
+L 244.908 303.804 
+Q 244.908 306.0216 247.14 306.0216 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #eaf4ef; stroke: #738497; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 342 222.643007 
+Q 342 235.61133 342 247.014405 
+" clip-path="url(#p40ad711be4)" style="fill: none; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 344.8 241.414405 
+L 342 247.014405 
+L 339.2 241.414405 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 470.34 220.0896 
+L 660.06 220.0896 
+Q 662.292 220.0896 662.292 217.872 
+L 662.292 134.712 
+Q 662.292 132.4944 660.06 132.4944 
+L 470.34 132.4944 
+Q 468.108 132.4944 468.108 134.712 
+L 468.108 217.872 
+Q 468.108 220.0896 470.34 220.0896 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #edf2f7; stroke: #738497; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 565.2 104.554657 
+Q 565.2 117.246119 565.2 128.372333 
+" clip-path="url(#p40ad711be4)" style="fill: none; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 568 122.772333 
+L 565.2 128.372333 
+L 562.4 122.772333 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 470.34 306.0216 
+L 660.06 306.0216 
+Q 662.292 306.0216 662.292 303.804 
+L 662.292 253.908 
+Q 662.292 251.6904 660.06 251.6904 
+L 470.34 251.6904 
+Q 468.108 251.6904 468.108 253.908 
+L 468.108 303.804 
+Q 468.108 306.0216 470.34 306.0216 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #eaf4ef; stroke: #738497; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 565.2 222.643007 
+Q 565.2 235.61133 565.2 247.014405 
+" clip-path="url(#p40ad711be4)" style="fill: none; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+    <path d="M 568 241.414405 
+L 565.2 247.014405 
+L 562.4 241.414405 
+z
+" clip-path="url(#p40ad711be4)" style="fill: #53677e; stroke: #53677e; stroke-width: 1.4; stroke-linecap: round"/>
+   </g>
+   <g id="text_1">
+    <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: start; fill: #172536" x="21.15" y="26.604" transform="rotate(-0 21.15 26.604)">Notebook 02: welcher Teil des Gesprächs wird mitgeschickt?</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(199.531094 72.756348)">Dasselbe Gespräch: drei Fragen und drei Antworten</text>
+    <text style="font-size: 11px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(163.082422 85.959355)">Die erste Nachricht enthält den Wunsch nach zwei Stichpunkten.</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(102.86543 160.116873)">Buffer</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(65.770898 172.718924)">Frage 1 + Antwort 1</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(65.770898 185.320975)">Frage 2 + Antwort 2</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(65.770898 197.923025)">Frage 3 + Antwort 3</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(89.113711 275.282514)">BFH-Modell</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(40.100039 287.885385)">mit derselben Vergleichsfrage</text>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(321.300234 166.417488)">Window</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(288.970898 179.019539)">Frage 3 + Antwort 3</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(259.803047 191.62241)">Die älteren Nachrichten fehlen.</text>
+   </g>
+   <g id="text_6">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(312.313711 275.282514)">BFH-Modell</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(263.300039 287.885385)">mit derselben Vergleichsfrage</text>
+   </g>
+   <g id="text_7">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(539.829375 166.416668)">Summary</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(468.83625 179.019539)">Zusammenfassung von Paar 1 und 2</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(500.515078 191.62241)">+ Frage 3 und Antwort 3</text>
+   </g>
+   <g id="text_8">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(535.513711 275.282514)">BFH-Modell</text>
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; fill: #172536" transform="translate(486.500039 287.885385)">mit derselben Vergleichsfrage</text>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10.5px; font-family: 'DejaVu Sans', 'Bitstream Vera Sans', 'Computer Modern Sans Serif', 'Lucida Grande', 'Verdana', 'Geneva', 'Lucid', 'Arial', 'Helvetica', 'Avant Garde', sans-serif; text-anchor: middle; fill: #53677e" x="342" y="337.068" transform="rotate(-0 342 337.068)">Drei getrennte Aufrufe. Vergleichsfrage und Bitcoin-Text bleiben gleich; der Gesprächsausschnitt ändert sich.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p40ad711be4">
+   <rect x="7.2" y="7.2" width="669.6" height="349.272"/>
+  </clipPath>
+ </defs>
+</svg>

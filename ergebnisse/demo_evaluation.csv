@@ -1,6 +1,0 @@
-﻿id,modus,antwort,signal_ok,quelle_ok,tool_ok,sekunden,inhalt_manuell
-Q1,demo,"{""antwort"":""Laut der Unterlage ist die Gesamtmenge auf 21 Millionen Bitcoins begrenzt."",""quelle"":""Eigenschaften-Bitcoin.pdf, S. 1""}",True,True,True,0.053,noch prüfen
-Q2,demo,"{""antwort"":""Die Open-Banking-Unterlage nennt JSON und XML als Formate für die Codierung."",""quelle"":""Open Banking_Zusammenfassung.pdf, S. 1""}",True,True,True,0.04,noch prüfen
-Q3,demo,"{""antwort"":""Laut der Unterlage müssen Bankkunden Drittanbietern erlauben, auf ihre Bankdaten zuzugreifen."",""quelle"":""Open Banking_Zusammenfassung.pdf, S. 3""}",True,True,True,0.042,noch prüfen
-Q4,demo,"{""antwort"":""Der heutige Bitcoin-Kurs steht nicht in den vorliegenden Unterlagen."",""quelle"":""keine Quelle""}",True,True,True,0.045,noch prüfen
-Q5,demo,Planungswert: 90 Arbeitsstunden bei 30 Stunden pro ECTS.,True,True,True,0.028,noch prüfen
